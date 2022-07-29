@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    background-color: #121212;
+}
+
+.container {
+    background-color: #121212;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    width: 450px;
+}
+
+.buttons { 
+    align-self: flex-start; /*El align self se debe incluir en el div general que envuelve a los botones para que sirva*/
+    display: flex; /*Sirve para quelos 2 botones salgan en la misma línea*/
+    gap: 20px;
+}
+
+.google-btn {
+    background-color: #bbb;    
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    display: flex; /*Renderizando los 2 elementos de manera continua*/
+    align-items: center; /*Los centra en el eje vertical*/
+    padding: 2px;
+    box-shadow: 0 0 2px #aaa;
+}
+
+.google-btn:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.google-btn picture { /*No olvidar el orden, debe estar dentro de google-btn -> buttons -> google-btn:hover*/
+    width: 36px;
+    height: 36px;
+    background-color: #121212;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-btn picture img {
+    width: 75%;    
+}
+
+.google-btn span {
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    font-weight: 500;
+    font-size: 10pt;
+    padding: 15px;
+}
+
+.twitter-btn {
+    background-color: #bbb;
+    border: none;
+    width: 40px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0 0 2px #aaa;
+}
+
+.twitter-btn:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.twitter-btn picture img {
+    display: flex;
+    width: 100%;     
+    background-color: #bbb;      
+}
+
+.separator {
+    display: flex; /*Para poner todo en una misma línea*/
+    width: 100%;
+    gap: 15px;
+}
+
+.separator hr {
+    flex-grow: 1; /*Sirve para que las líneas (hr) se expandan al max*/
+    border: none;
+    border-top: 1px solid #EA4C89;
+}
+
+.separator span {
+    color: white;
+}
+
+.section-inputs {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+    gap: 30px;
+}
+
+/*Sirven para juntar a las forms*/
+label {    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label span {
+    font-weight: 700;
+}
+
+.section-inputs label input {
+    width: 80%;
+    background-color: #272727;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14pt;
+}
+
+label input {
+    width: 90%;
+    background-color: #272727;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14pt;
+    transition: backgroud-color 0.2s, box-shadow 0.5s;
+}
+
+label input:hover {
+    background-color: #272727;    
+    box-shadow: 0 0 4px #bbb;
+}
+
+label input:focus {
+    background-color: #272727;
+    box-shadow: 0 0 4px #bbb;
+}
+
+.checkbox-label {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: 20px;
+}
+
+.checkbox-label span {
+    font-weight: 400;
+}
+
+.submit-btn {
+    background-color: #EA4C89;
+    color: white;
+    font-weight: 500;
+    font-size: 14pt;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 2px #bbb;
+}
+
+.submit-btn:hover {
+    opacity: 0.75;
+}
+
